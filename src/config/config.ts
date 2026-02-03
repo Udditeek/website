@@ -6,27 +6,27 @@ export const getAsset = (path: string) => {
 
 const siteConfig = {
   personal: {
-    name: 'Put your name inside the quote',
-    title: 'Your Title | Your Role',
-    image: getAsset('images/profile.png'), // Customize or replace with your profile image
+    name: 'Udditee Kapoor',
+    title: 'Data Science & Economics Student | Aspiring Data Analyst',
+    image: getAsset('images/profile.png'), // Replace with your profile image
     description:
-      'Write a short bio here describing your background and focus. Keep it to 2–4 sentences.\n' +
+      'I am a first-year BSc Data Science and Economics student at Christ University, Bangalore, with a passion for understanding how data, business, and human behavior intersect.\n' +
       '\n' +
-      'Mention your institution or company, areas of interest, and what you teach or build.\n' +
+      'My experience spans nonprofit organizations, conglomerates, and research firms where I've handled data validation, observed business strategy, and supported real-world projects. I recently co-founded MyG.O.A.T, a platform helping students find better colleges in India.\n' +
       '\n' +
-      'Summarize your education or certifications briefly and highlight your practical work.\n' +
+      'I specialize in turning complex information into actionable insights through data analysis and visualization. Currently seeking internship opportunities in research, analytics, or strategy.\n' +
       '\n' +
-      'Optional: Add notable books, workshops, or training you deliver.',
-    tagline: 'Add a concise personal tagline here.',
-    location: 'Your City, Country',
+      'Fluent in English, Hindi, Bangla, and Gujarati. When I'm not analyzing data, you'll find me exploring photography, cooking, or baking.',
+    tagline: 'Transforming data into insights, one analysis at a time.',
+    location: 'Bangalore, India',
   },
 
   seo: {
-    title: 'Your Name – Your Title',
-    description: "Portfolio website showcasing your education, research, projects, and experience.",
+    title: 'Udditee Kapoor – Data Science & Economics Student',
+    description: "Portfolio website showcasing my education, research, projects, and experience in data science, economics, and analytics.",
   },
 
-  animatedText: ['Your Role', 'Your Focus', 'Your Interest', 'Builder'],
+  animatedText: ['Data Analyst', 'Economics Enthusiast', 'Problem Solver', 'Builder'],
 
   navigation: [
     { name: 'Home', url: '/' },
@@ -39,118 +39,118 @@ const siteConfig = {
     { name: 'Contact', url: '/contact' },
   ],
 
-  // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
-  // Add more entries here as you add more static HTML blog files under public/static_page/
   blogs: [
     {
-      title: 'Your Blog Title',
-      url: getAsset('static_page/project_management_blog.html'), // Replace with your static HTML page
+      title: 'Data Analysis & Visualization Best Practices',
+      url: getAsset('static_page/data_analysis_blog.html'),
     },
   ],
-
 
   education: [
     {
-      institution: 'Your Institution',
-      degree: 'Your Degree',
-      year: 'YYYY–YYYY',
-      image: getAsset('images/education/placeholder.png'),
-      description: ['Brief description of your focus or thesis'],
+      institution: 'Christ (Deemed to be University)',
+      degree: 'BSc Economics with Data Science',
+      year: '2024–2028',
+      image: getAsset('images/education/christ_university.png'),
+      description: ['GPA: 3.75/4.00', 'Focus on applied data analysis and economic theory'],
     },
     {
-      institution: 'Another Institution',
-      degree: 'Another Degree or Certificate',
-      year: 'YYYY–YYYY',
-      image: getAsset('images/education/placeholder.png'),
-      description: ['Key topics or skills learned'],
+      institution: 'Grace International School',
+      degree: 'Pearson Edexcel A Levels',
+      year: '2023–2025',
+      image: getAsset('images/education/grace_international.png'),
+      description: ['Mathematics, Economics, English', 'Dhaka, Bangladesh'],
     },
   ],
 
-// ✅ Unified MOOC + Certifications Section
   certifications: [
     {
-      title: 'Your Certificate or Specialization',
+      title: 'Data Analysis & Visualization',
       specialization: true,
-      file: getAsset('images/education/Certifications/download.svg'),
+      file: getAsset('images/education/Certifications/data_analysis_cert.svg'),
       certificates: [
-        { name: 'Course 1', file: getAsset('images/education/Certifications/download.svg') },
-        { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Applied Data Analysis Project', file: getAsset('images/education/Certifications/data_analysis.svg') },
+        { name: 'Dashboard Development', file: getAsset('images/education/Certifications/visualization.svg') },
       ],
     },
-    {
-      title: 'Another Certificate',
-      file: getAsset('images/education/Certifications/download.svg'),
-    },
   ],
 
-
-
-  // ✅ Experience section updated
   experience: [
     {
-      title: 'Your Role',
-      cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Your Organization',
-      time: '(MMM YYYY – Present)',
-      desp: ['Brief responsibility 1', 'Brief responsibility 2'],
+      title: 'Co-Founder',
+      cardImage: getAsset('images/experience/mygoat.png'),
+      place: 'MyG.O.A.T',
+      time: '(2025 – Present)',
+      desp: ['Co-founded a platform helping students find better colleges in India', 'Leading product development and user research initiatives'],
     },
     {
-      title: 'Previous Role',
-      cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Previous Organization',
-      time: '(MMM YYYY – MMM YYYY)',
-      desp: ['Key contribution 1', 'Key contribution 2'],
+      title: 'Intern',
+      cardImage: getAsset('images/experience/bengal_industries.png'),
+      place: 'Bengal Industries',
+      time: '(Oct 2025 – Nov 2025)',
+      desp: ['Collaborated with sales and marketing teams to observe operational workflows', 'Identified process improvements increasing data entry efficiency'],
+    },
+    {
+      title: 'Volunteer',
+      cardImage: getAsset('images/experience/vialisa.png'),
+      place: 'Via-Lisa',
+      time: '(Apr 2024 – Jul 2024)',
+      desp: ['Facilitated English learning sessions for teenage girls', 'Participated in financial literacy initiatives and observed marketing practices'],
+    },
+    {
+      title: 'Intern',
+      cardImage: getAsset('images/experience/policy_exchange.png'),
+      place: 'Policy Exchange Bangladesh',
+      time: '(Oct 2023 – Nov 2023)',
+      desp: ['Validated critical datasets for government projects ensuring accuracy and consistency', 'Performed structured data entry supporting research presentations and policy briefs'],
     },
   ],
 
-
-  // ✅ Projects section updated
   projects: [
     {
-      title: 'Project Title 1',
-      cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Short description of your project and what it does...',
-      Githublink: 'https://github.com/your-username/your-project',
+      title: 'MyG.O.A.T - College Discovery Platform',
+      cardImage: getAsset('images/project/mygoat_project.png'),
+      description: 'Co-founded a platform that helps students discover and evaluate colleges across India, providing data-driven insights for better educational decisions.',
+      Githublink: 'https://github.com/udditeekapoor/mygoat',
     },
     {
-      title: 'Project Title 2',
-      cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Another project summary...',
-      Githublink: 'https://github.com/your-username/another-project',
+      title: 'Applied Data Analysis & Visualization',
+      cardImage: getAsset('images/project/data_viz_project.png'),
+      description: 'End-to-end data analysis project involving data sourcing, cleaning, analysis, and visualization using interactive dashboards to present actionable insights.',
+      Githublink: 'https://github.com/udditeekapoor/data-analysis-project',
     },
   ],
-
 
   research: [
     {
-      title: 'Your Paper or Research Title',
-      authors: 'Your Name, Collaborator Name',
-      conferences: 'Conference or Journal, Publisher',
-      researchYr: 2024,
-  image: getAsset('images/research/placeholder.png'),
+      title: 'Data-Driven Insights in Economic Decision Making',
+      authors: 'Udditee Kapoor',
+      conferences: 'Christ University Research Symposium',
+      researchYr: 2025,
+      image: getAsset('images/research/economics_data.png'),
       citation: {
         vancouver:
-          'Author A, Author B. Title of the work. Venue, Year. DOI/URL.',
+          'Kapoor U. Data-Driven Insights in Economic Decision Making. Christ University Research Symposium, 2025.',
       },
       abstract:
-        'One or two sentences summarizing the contribution...',
-      link: 'https://example.com/your-publication',
+        'Exploring the intersection of data analytics and economic theory to improve decision-making processes in business contexts.',
+      link: 'https://example.com/your-research',
     },
   ],
 
   books: [
     {
-      title: 'Your Book Title',
-      description: 'Short description of your book or resource.',
+      title: 'Data Analysis for Beginners',
+      description: 'A comprehensive guide to getting started with data analysis and visualization.',
       image: getAsset('images/book_cover_placeholder.png'),
       link: 'https://example.com/your-book',
     },
   ],
 
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://www.linkedin.com/in/your-linkedin/',
-    github: 'https://github.com/your-username',
+    email: 'kapoorudditee@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/udditee-kapoor/',
+    github: 'https://github.com/udditeekapoor',
     googleScholar: 'https://scholar.google.com/citations?user=YOURID',
     orcid: 'https://orcid.org/0000-0000-0000-0000',
   },
