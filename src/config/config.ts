@@ -31,22 +31,13 @@ const siteConfig = {
   navigation: [
     { name: 'Home', url: '/' },
     { name: 'Projects', url: '/projects' },
-    { name: 'Research', url: '/research' },
     { name: 'Education', url: '/education' },
     { name: 'Experience', url: '/experience' },
-    { name: 'Blogs', url: '/blogs' },
     { name: 'Resume', url: '/resume' },
     { name: 'Contact', url: '/contact' },
   ],
 
-  blogs: [
-    {
-      title: 'Data Analysis & Visualization Best Practices',
-      url: getAsset('static_page/data_analysis_blog.html'),
-    },
-  ],
-
-  education: [
+    education: [
     {
       institution: 'Christ (Deemed to be University)',
       degree: 'BSc Economics with Data Science',
@@ -60,18 +51,6 @@ const siteConfig = {
       year: '2023–2025',
       image: getAsset('images/education/grace_international.png'),
       description: ['Mathematics, Economics, English', 'Dhaka, Bangladesh'],
-    },
-  ],
-
-  certifications: [
-    {
-      title: 'Data Analysis & Visualization',
-      specialization: true,
-      file: getAsset('images/education/Certifications/data_analysis_cert.svg'),
-      certificates: [
-        { name: 'Applied Data Analysis Project', file: getAsset('images/education/Certifications/data_analysis.svg') },
-        { name: 'Dashboard Development', file: getAsset('images/education/Certifications/visualization.svg') },
-      ],
     },
   ],
 
@@ -121,39 +100,11 @@ const siteConfig = {
     },
   ],
 
-  research: [
-    {
-      title: 'Data-Driven Insights in Economic Decision Making',
-      authors: 'Udditee Kapoor',
-      conferences: 'Christ University Research Symposium',
-      researchYr: 2025,
-      image: getAsset('images/research/economics_data.png'),
-      citation: {
-        vancouver:
-          'Kapoor U. Data-Driven Insights in Economic Decision Making. Christ University Research Symposium, 2025.',
-      },
-      abstract:
-        'Exploring the intersection of data analytics and economic theory to improve decision-making processes in business contexts.',
-      link: 'https://example.com/your-research',
-    },
-  ],
-
-  books: [
-    {
-      title: 'Data Analysis for Beginners',
-      description: 'A comprehensive guide to getting started with data analysis and visualization.',
-      image: getAsset('images/book_cover_placeholder.png'),
-      link: 'https://example.com/your-book',
-    },
-  ],
-
   contact: {
     email: 'kapoorudditee@gmail.com',
     linkedin: 'https://www.linkedin.com/in/udditee-kapoor/',
     github: 'https://github.com/udditeekapoor',
-    googleScholar: 'https://scholar.google.com/citations?user=YOURID',
-    orcid: 'https://orcid.org/0000-0000-0000-0000',
-  },
+    },
 };
 
 export default siteConfig;
